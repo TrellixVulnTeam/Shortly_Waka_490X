@@ -1,0 +1,172 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Poppins', sans-serif;
+}
+
+body a{
+    text-decoration: none;
+    list-style: none;
+}
+
+body li{
+    text-decoration: none;
+    list-style: none;
+}
+
+$Cyan: hsl(180, 66%, 49%);
+$Dark-Violet: hsl(257, 27%, 26%);
+$Red: hsl(0, 87%, 67%);
+$Gray: hsl(0, 0%, 75%);
+$Grayish-Violet: hsl(257, 7%, 63%);
+$Very-Dark-Blue: hsl(255, 11%, 22%);
+$Very-Dark-Violet: hsl(260, 8%, 14%);
+
+
+@mixin flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin boxes_shorten {
+    background-color: #fff;
+    box-shadow: 15px 15px 30px rgba(218, 216, 216, 0.904);
+    margin: 1% 1%;
+    padding:1%;
+}
+
+@mixin boxes_img {
+    background-color:$Dark-Violet;
+    border-radius:100%;
+    padding:10px;
+    margin-bottom:5px;
+}
+body{
+    height:100%;
+    width: 100%;
+}
+
+
+
+/*nav*/
+
+.navhamb{
+    display: none;
+}
+.NAV{
+    @include flex;
+    padding:8px;
+    z-index: 99999999999;
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 5px 5px 15px rgba(230, 230, 230, 0.726);
+    .ul_nav{ @include flex;}
+      
+    .logo_nav{height:8vh;}
+
+    .ul_nav a{
+          color: #2c2c2c;
+          margin-left:40px; 
+          font-size:18px;
+     }  
+
+     .ul_nav a:hover{ color:$Cyan; } 
+
+     .ul_btn button{ 
+         background-color: $Cyan;
+         color: #141414;
+         border-radius: 10px; 
+         margin-left: 10px;
+      }
+      .ul_btn button:hover{ 
+        color: #fff; 
+     }
+      
+}
+
+/*BodyMore*/
+
+.Body_More{@include flex;
+    .More_txt{ flex:50%; margin-left:3%;}
+    .More_img{flex:auto; margin-top:70px}
+    .h1_txt{ font-size:45px;}
+    .p_txt{color: $Grayish-Violet}
+    .More_ilus{height:70vh;}
+    .More_txt button{  background-color: $Cyan; color: #141414;    border-radius: 10px;}
+    .More_txt button:hover{ color: #fff; }
+}
+
+/*BodyShorten*/
+
+
+.shorten_Body{ 
+    width: 100vw; height: 30vh;
+     .shorten_form{
+        height: 18vh;
+         background-image: url(../images/bg-boost-desktop.svg);
+         background-repeat:no-repeat;
+         background-size: cover;
+         background-position: center;
+         background-color: $Very-Dark-Blue;
+         padding:20px;
+         border-radius: 10px;
+         width: 60%;
+         margin:15px auto;
+         text-align: center;
+     }
+
+     .shorten_form input{ width:40vw; height:6vh; border: none; }
+     .shorten_form button{  background-color: $Cyan; color: #141414; border-radius: 10px; margin-left: 10px;}
+     .shorten_form button:hover{ color: #fff;}
+     .link_shorten{width: 70vw;  padding: 10px; text-align: center; background-color:rgba(255, 255, 255, 0.952); margin:auto; box-shadow: 5px 5px 15px #dddddde5; position:relative; border-radius: 10px; display:none;}
+}
+
+
+/*txt_shorten*/
+
+.txt_shorten{
+    .Sec_shorten{@include flex;}
+    .Sec_txt{text-align:center; margin:auto; margin-top:10%;}
+    .Sec_txt h2{font-size:30px;}
+    .p_txt {color:$Grayish-Violet}
+    .Sec_shorten article{ @include boxes_shorten; }
+    .img_1 img{ @include boxes_img;}
+    .Sec_shorten article h2{font-size:20px;}
+    .Sec_shorten article p{font-size:15px; color:$Grayish-Violet;}
+    .Sec_shorten .txt_2{margin-top: 5%};
+    .Sec_shorten .txt_3{margin-top: 10%};
+}
+
+/*BoostShort*/
+
+.Boost_shorten{
+    background-image: url(../images/bg-boost-desktop.svg);
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: $Very-Dark-Blue;
+    padding:5%;
+    color: #fff;
+    text-align: center;
+    margin:auto;
+
+    .btn_shorten{padding:1% 2%; border:none; background-color: $Cyan ; color: #141414; border-radius: 10px;}
+    .btn_shorten:hover{ color: #fff;}
+
+}
+
+/*Footer*/
+
+.footer{@include flex; background-color: $Very-Dark-Blue; color: #fff;  padding:2%;}
+.txt_Footer{@include flex;}
+.txt_Footer ul{line-height: 1.8em; margin-left: 50px;}
+#title{color: #fff;  font-size:15px}
+.txt_Footer ul li{color: $Gray; cursor: pointer; font-size:12px}
+.txt_Footer ul li:hover{color: $Cyan;}
+.Social img{cursor: pointer; margin-left: 10px; border-radius:80%}
+.Social img:hover{background-color: $Cyan;}    
+
+
