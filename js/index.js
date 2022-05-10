@@ -25,6 +25,7 @@ async function shorten(e){
     }
     else{
       try{
+          // syntax error aqui
         const apirest = await fetch(`?q=${Api.url}&appid=${Api.key}`);
         const data = await apirest.json();
         console.log(data)    
@@ -66,6 +67,7 @@ function addDelete(){
         const item = e.target.parentElement;
         linkShorten.removeChild(item);
 
+        //error aqui para eliminar campos
         for(let i = 0; i=item.length; i++) {
             if(item[i].pop() === ``){
                 linkShorten.appendChild(item[i]);
