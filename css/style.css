@@ -4,6 +4,8 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif; }
 
+
+
 body a {
   text-decoration: none;
   list-style: none; }
@@ -35,7 +37,7 @@ body {
     justify-content: space-between;
     align-items: center; }
   .NAV .logo_nav {
-    height: 8vh; }
+    height: 6vh; }
   .NAV .ul_nav a {
     color: #2c2c2c;
     margin-left: 40px;
@@ -49,6 +51,11 @@ body {
     margin-left: 10px; }
   .NAV .ul_btn button:hover {
     color: #fff; }
+  .NAV .navResponsive {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; }
 
 /*BodyMore*/
 .Body_More {

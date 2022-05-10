@@ -52,6 +52,7 @@ function addDelete(){
     deleteBtn.addEventListener('click',(e) =>{
         const item = e.target.parentElement;
         linkShorten.removeChild(item);
+        
     });
     return deleteBtn;
 }

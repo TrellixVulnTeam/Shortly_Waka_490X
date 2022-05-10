@@ -65,7 +65,7 @@ body{
     box-shadow: 5px 5px 15px rgba(230, 230, 230, 0.726);
     .ul_nav{ @include flex;}
       
-    .logo_nav{height:8vh;}
+    .logo_nav{height:6vh;}
 
     .ul_nav a{
           color: #2c2c2c;
@@ -83,6 +83,11 @@ body{
       }
       .ul_btn button:hover{ 
         color: #fff; 
+     }
+
+     .navResponsive{
+         @include flex;
+         width: 100%;
      }
       
 }

@@ -1,9 +1,9 @@
 
 let menu = document.getElementById('menu');
-let nav = document.querySelector('#nav');
+let NAV = document.querySelector('.NAV');
 
 menu.addEventListener("click", () =>{
-    nav.classList.toggle("NAV");
+    NAV.classList.toggle("navResponsive");
 });
 
 /*MenuHamburguesa remover
