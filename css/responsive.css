@@ -151,6 +151,9 @@
      .Sec_shorten{
          flex-direction:column;
      }
+     .Sec_shorten{
+        text-align: center;
+    }
 
       /*Footer*/
       .footer{
@@ -208,9 +211,7 @@
         font-size:13px;
     }
 
-    .Sec_shorten{
-        text-align: center;
-    }
+    
 
     .txt_shorten
     .Sec_shorten article img{
