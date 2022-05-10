@@ -14,6 +14,7 @@ function shorten(e){
     e.preventDefault();
     if(inputShorten.value === ``){
        errShorten.value;
+       errShorten.style.visibility="visible"
        errShorten.textContent = 'Please, Complete field.';
        errShorten.style.color = 'red';
        
@@ -36,6 +37,7 @@ function shorten(e){
     p.style.cursor= `pointer`
     
     inputShorten.value=``;
+    errShorten.style.visibility="hidden"
 }
 }
 
@@ -50,8 +52,10 @@ function addDelete(){
     deleteBtn.className = `btn-delete`
 
     deleteBtn.addEventListener('click',(e) =>{
+
         const item = e.target.parentElement;
         linkShorten.removeChild(item);
+        linkShorten.remove()
 
     });
     return deleteBtn;

@@ -1,5 +1,5 @@
 :root{
-    --Dark-Violet: hsl(258, 26%, 42%);
+    --Dark-Violet: hsl(257, 38%, 36%);
 }
 
 @media (max-width: 1500px){
@@ -74,7 +74,7 @@
        z-index: 99999999999;
        top: 20;
        transition:all 0.8s ease-in-out;
-       box-shadow: 5px 5px 15px rgb(153, 153, 153);
+       box-shadow: 5px 5px 15px rgb(185, 185, 185);
        background-color: var(--Dark-Violet);
        border-radius: 10px;
     }
