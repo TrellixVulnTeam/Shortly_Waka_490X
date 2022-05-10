@@ -108,7 +108,8 @@ body{
 
 
 .shorten_Body{ 
-    width: 100vw; height: 30vh;
+    padding:20px;
+    margin:auto;
      .shorten_form{
         height: 18vh;
          background-image: url(../images/bg-boost-desktop.svg);
@@ -118,12 +119,12 @@ body{
          background-color: $Very-Dark-Blue;
          padding:20px;
          border-radius: 10px;
-         width: 60%;
+         width: 75vw;
          margin:15px auto;
          text-align: center;
      }
 
-     .shorten_form input{ width:40vw; height:6vh; border: none; }
+     .shorten_form input{ width:50vw; padding:5px 0; border: none; }
      .shorten_form button{  background-color: $Cyan; color: #141414; border-radius: 10px; margin-left: 10px;}
      .shorten_form button:hover{ color: #fff;}
      .link_shorten{width: 70vw;  padding: 10px; text-align: center; background-color:rgba(255, 255, 255, 0.952); margin:auto; box-shadow: 5px 5px 15px #dddddde5; position:relative; border-radius: 10px; display:none;}

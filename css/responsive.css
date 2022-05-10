@@ -45,9 +45,7 @@
 
     .shorten_Body
     .shorten_form{
-        height: 25vh;}
-
-        .shorten_form button{  margin-top: 10px;}
+        height: 20vh;}
 
      /*footer*/
      .footer
@@ -134,16 +132,20 @@
     }
 
    /*BodyShorten*/
-
+   .shorten_Body
     .shorten_form{
         display: flex;
         justify-content: space-between;
         align-items: center;
         flex-direction: column;
-        height: 18vh;
+        height: 27vh;
     }
+    .shorten_Body
+    .shorten_form input{ width:70vw; ; }
+    .shorten_form button{ width:20vw; height:5vh; margin-top:10px;}
 
-    .shorten_form button{ margin-top:10px;}
+     
+
      /*TtxShort*/
 
      .Sec_shorten{
@@ -228,10 +230,13 @@
 
     /*BodyShorten*/
 
-    .shorten_Body
-    .shorten_form{
-        height: 30vh;}
+           .shorten_Body .link_shorten{
+               width:80vw;
+               font-size:12px;
+               
+           }
 
+        .shorten_form button{ width:60vw; height:8vh;}
 
         /*TtxShort*/
 
@@ -250,6 +255,19 @@
 }
 
 @media (max-width: 400px){
+
+    .shorten_Body
+    .shorten_form{
+        height: 30vh;
+    }
+
+    .shorten_Body .link_shorten{
+        width:82vw;
+        font-size:10px;
+        
+    }
+    
+    .shorten_form button{ width:60vw; height:5vh;}
 
     .navResponsive{
         right:20px;
